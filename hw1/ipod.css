@@ -1,0 +1,117 @@
+/* 
+	Global classes 
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.head-bar {
+	
+}
+
+.back-button {
+	
+}
+
+/* 
+	Albums 
+			*/
+.albums-album-wrapper {
+	f
+}
+
+.albums-album-art {
+	
+}
+
+.albums-album-name {
+
+}
+
+.albums-artist-name {
+
+}
+
+/* 
+	Songs 
+			*/
+.songs-info-wrapper {
+	
+}
+
+.songs-album-art {
+	
+}
+
+.songs-album-name {
+	
+
+}
+
+.songs-artist-name {
+	
+}
+
+.songs-text-info {
+	
+}
+
+.songs-album-year {
+	
+}
+
+.songs-list {
+	
+}
+
+/* 
+	Player 
+			*/
+.player-album-art {
+	
+}
+
+.player-song-info {
+	
+}
+
+#player-song-name {
+	
+}
+
+.volume-bar {
+	
+}
+
+.volume-level {
+	
+}
+
+.volume-rocker {
+	
+}
+
+.player-controls{
+	
+}
+
+#player-time {
+	
+}
+
+#time-elapsed {
+	
+}
+
+#time-total{
+	
+}
