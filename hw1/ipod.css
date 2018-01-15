@@ -17,7 +17,6 @@ body {
 .albumName {
 	text-align: center;
 	margin-top: 5px;
-	margin-bottom: 0px;
 }
 
 .artistName {
@@ -33,13 +32,32 @@ body {
 	vertical-align: center;
 	text-align: center;
 	color: white;
-	/* text-shadow: 1px; */
-	margin-bottom: 20px;
-	margin-left: 8px;
+	text-shadow: 1px 1px #000;
+}
+
+
+.back-button-wrapper {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px white solid;
+	background-color: lightgrey;
+	margin-top: 0.3rem;
+	margin-left: 0.3rem;
+	width: 20%;
+	height: 75%;
 }
 
 .back-button {
-
+	text-shadow: none;
+	font-size: 2rem;
+	font-weight: bold;
+	position: relative;
+  top: 60%;
+  transform: translateY(-50%);
+	margin: auto;
+	color: purple;
 }
 
 /*
@@ -47,27 +65,26 @@ body {
 			*/
 
 .fluid-container {
-	margin-left: 5px;
+	display: flex;
+	margin-top: 2rem;
+	/* margin-left: 5px; */
 }
 
 .albums-album-wrapper {
-	margin-bottom: 15px;
-	margin-left: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 0.6rem;
+	margin-left: 0.6rem;
+	margin-right: 0.6rem;
 }
 
 .albums-album-art {
 	width: 130px;
 	height: 130px;
-	margin-left: auto;
-  margin-right: auto;
 }
 
 .albums-album-name {
 	text-align: center;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 10px;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
 	font-size: 15px;
 }
 
@@ -75,7 +92,6 @@ body {
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 5px;
-	margin-left: 10px;
 	font-size: 10px;
 	font-style: italic;
 }
@@ -84,32 +100,55 @@ body {
 	Songs
 			*/
 .songs-info-wrapper {
-
+	display: flex;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
 }
 
 .songs-album-art {
-
-}
-
-.songs-album-name {
-
-
-}
-
-.songs-artist-name {
-
+	width: 50%;
+	height: 28%;
+	/* width: 9rem; */
+	/* height: 9rem; */
 }
 
 .songs-text-info {
+	margin-left: 0.4rem;
+	vertical-align: center;
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem;
+	vertical-align: middle;
+}
 
+.songs-album-name {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: inherit;
+}
+
+.songs-artist-name {
+	font-style: italic;
+	font-weight: 300;
+	margin: inherit;
 }
 
 .songs-album-year {
+	font-weight: 300;
+	margin: inherit;
+}
 
+li {
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom: 0.4rem;
+	margin-right: 0.7rem;
+	padding-left: 0.5rem;
 }
 
 .songs-list {
-
+	border-width: 1px;
+	margin-bottom: 5px;
+	margin-right: 10px;
 }
 
 /*
