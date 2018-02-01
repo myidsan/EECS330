@@ -1,0 +1,227 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.albumName {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.artistName {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.head-bar h1 {
+	margin: auto;
+}
+
+.head-bar {
+	height: 45px;
+	width: 300px;
+	background-color: #e6ccff;
+	color: white;
+	/* text-shadow: 1px 1px #000; */
+	align-items: center;
+	display: flex;
+}
+
+.back-button {
+	border: 1px white solid;
+	background-color: #D3D3D3;
+	color: #4D1F88;
+	margin-left: 0.3rem;
+	width: 20%;
+	height: 75%;
+}
+
+.larr {
+	margin-top: 0.3rem;
+}
+
+/*
+	Albums
+			*/
+
+.fluid-container {
+	display: flex;
+	margin-top: 2rem;
+	/* margin-left: 5px; */
+}
+
+.albums-album-wrapper {
+	margin-bottom: 0.6rem;
+	margin-left: 0.6rem;
+	margin-right: 0.6rem;
+}
+
+.albums-album-art {
+	width: 130px;
+	height: 130px;
+}
+
+.albums-album-name {
+	text-align: center;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	font-size: 15px;
+}
+
+.albums-artist-name {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 10px;
+	font-style: italic;
+}
+
+/*
+	Songs
+			*/
+.songs-info-wrapper {
+	display: flex;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+.songs-album-art {
+	width: 50%;
+	height: 28%;
+	/* width: 9rem; */
+	/* height: 9rem; */
+}
+
+.songs-text-info {
+	margin-left: 0.4rem;
+	vertical-align: center;
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem;
+	vertical-align: middle;
+}
+
+.songs-album-name {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: inherit;
+}
+
+.songs-artist-name {
+	font-style: italic;
+	font-weight: 300;
+	margin: inherit;
+}
+
+.songs-album-year {
+	font-weight: 300;
+	margin: inherit;
+}
+
+li {
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom: 0.4rem;
+	margin-right: 0.7rem;
+	padding-left: 0.5rem;
+}
+
+.songs-list {
+	border-width: 1px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+
+/*
+	Player
+			*/
+
+#screen {
+	align-items: center;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.player-album-art {
+	width: 80%;
+	height: 45%;
+	margin-top: 2rem;
+}
+
+.player-song-info,
+p {
+	margin: 0;
+	margin-top: 0.5rem;
+}
+
+#player-song-name {
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: darkgray;
+}
+
+#player-artist-name {
+	color: purple;
+}
+
+/* time related classes */
+
+#time-bar {
+	width: 80%;
+}
+
+#player-time {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 2rem;
+	align-items: center;
+	width: 80%;
+
+}
+
+/* volume related classes */
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.volume-level {
+	border: 1px solid black;
+	height: 0.4rem;
+	width: 1.5rem;
+	margin-left: 0.5rem;
+}
+
+.volume-rocker {
+	width: 7rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+
+/* unused classes given as default */
+/* .player-controls{
+
+}
+
+#time-elapsed {
+
+}
+
+#time-total{
+
+} */
