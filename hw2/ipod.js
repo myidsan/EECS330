@@ -1,6 +1,6 @@
 // Create your global variables below:
 var tracklist = ["Let It Happen", "Nangs", "The Moment", "Yes I'm Changing", "Eventually", "Gossip", "The Less I Know The Better", "Past Life", "Disciples", "'Cause I'm A Man"];
-let curr_song = 7; // track current playing song as index
+let curr_song = 6; // track current playing song as index
 var volLevels = [];
 let volume = 0; // track volume level
 
@@ -12,7 +12,6 @@ let musicTime; // keeps track of music time
 function init() {
   // reset song to start
   let timeBar = document.getElementById('time-bar')
-  console.log(timeBar);
   timeBar.setAttribute("min", 0);
   timeBar.setAttribute("max", 180);
   timeBar.value = 0;
@@ -55,12 +54,10 @@ function switchPlay() {
     musicTime = setInterval(function() {Timer()}, 1000);
     switchBtn.innerHTML = "pause";
     goStop = true;
-    console.log(goStop);
   } else {
     clearInterval(musicTime);
     switchBtn.innerHTML = "play_arrow";
     goStop = false;
-    console.log(goStop);
   } 
 }
 
@@ -70,21 +67,25 @@ function Timer() {
   let startTime = document.getElementById("time-elapsed");
   let timeBar = document.getElementById("time-bar");
   time = time + 1;
+  if (time > 180) {
+    nextSong();
+    time = 0;
+    return;
+  }
   startTime.innerHTML = secondsToMs(time);
   timeBar.value = time;
-  console.log(time);
 }
 
 function nextSong() {
   let playing = document.getElementById("player-song-name");
 
   // looping over to the beginning of the list
-  if (curr_song >= 10) {
+  if (curr_song == tracklist.length - 1) {
     curr_song = 0;
+  } else {
+    curr_song++;
   }
-  console.log(tracklist[curr_song]);
   playing.innerHTML = tracklist[curr_song];
-  curr_song++;  
 
   // play if play & puase if pause
   checkGoStop();
@@ -95,12 +96,12 @@ function prevSong() {
   let playing = document.getElementById("player-song-name");
 
   // looping over to the end of the list
-  if (curr_song < 0) {
-    curr_song = tracklist.length - 1;;
+  if (curr_song == 0) {
+    curr_song = tracklist.length - 1;
+  } else {
+    curr_song--;
   }
-  console.log(tracklist[curr_song]);
   playing.innerHTML = tracklist[curr_song];
-  curr_song--;  
 
   checkGoStop();
 }
@@ -110,13 +111,11 @@ function checkGoStop() {
   let startTime = document.getElementById("time-elapsed");
   let timeBar = document.getElementById("time-bar");
   if (goStop === true) {
-    console.log("goStop true");
     clearInterval(musicTime);
     time = -1;
     Timer();
     musicTime = setInterval(function() {Timer()}, 1000);
   } else {
-    console.log("goStop false");
     clearInterval(musicTime);
     time = 0;
     timeBar.value = time;
